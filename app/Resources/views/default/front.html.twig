@@ -1,0 +1,24 @@
+
+ {% block stylesheets %}
+     <link href="{{ asset('/css/front.css') }}" rel="stylesheet" />
+     <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" />
+     <link href="{{ asset('/css/animate.css') }}" rel="stylesheet" />
+ {% endblock %}
+{% block page_content %}
+    <body>
+    <div id="intro_description" class="col-sm-12 col-md-12">
+        <h1>Вас приветствует почтовый сервис Smail</h1>
+        <div class="intro_feature">
+            <h3> Почтовый сервис Smail позволяет:</h3>
+                    <h4><i class="fa fa-check"></i>Обменваться сообщениями между адресатами.</h4>
+                    <h4><i class="fa fa-check"></i>Кроме текстовых сообшений по электронной почте можно передавать и любые другие файлы.</h4>
+                    <h4>Все используемые функции почтового сервиса полностью бесплатны.</h4>
+                    <h4>Предоставляет доступ к почтовым ящикам через веб-интерфейс.</h4>
+        </div>
+        <div class="intro_button text-center">
+            <a class="btn btn-primary btn-lg" href="{{ url('fos_user_registration_register') }}">Регистрация</a>
+            <a class="btn btn-primary btn-lg" href="{{ url('fos_user_security_login') }}">Войти</a>
+        </div>
+    </div>
+    </body>
+{% endblock %}

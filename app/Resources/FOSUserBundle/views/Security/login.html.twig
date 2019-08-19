@@ -1,0 +1,10 @@
+{% extends "@FOSUser/layout.html.twig" %}
+{% block h2 %}
+<h2 id="registr">Авторизация</h2>
+{% endblock %}
+{% block fos_user_content %}
+    <div class="fos_user_registration_register">
+        <div class="password_l">
+        {{ include('@FOSUser/Security/login_content.html.twig') }}
+    </div>
+{% endblock fos_user_content %}

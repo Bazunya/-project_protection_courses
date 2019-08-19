@@ -1,0 +1,145 @@
+
+.intro-parallax {
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#intro {
+	background-image: url(../img/veli.jpg);
+	background-size: cover;
+	min-width:100%;
+	min-height:100%;
+}
+
+.parallax {
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+a {
+	text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+.logo{
+
+}
+a:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #f8f8f8;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#intro {
+	padding-top: 30px;
+	padding-bottom: 80px;
+	color: #fff;
+}
+#header {
+	margin-bottom: 80px;
+}
+
+#header img {
+	padding: 0 15px;
+}
+
+#intro_description h1 {
+	font-size: 40px;
+	margin-bottom: 30px;
+	margin-left: 300px;
+
+}
+
+.intro_feature {
+
+	padding-top: 15px;
+}
+
+.intro_feature h4 {
+	font-weight: 600;
+}
+
+.intro_feature i {
+	margin-right: 5px;
+}
+
+.intro_feature p {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding-left: 25px;
+
+}
+
+.intro_button {
+	margin-top: 60px;
+}
+#intro_form {
+	padding-left: 100px;
+}
+
+.form_authorization {
+	width: 100%;
+	background: rgba(120, 120, 120, 0.45);
+	margin: 0 auto;
+    padding: 20px 20px 25px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form_authorization h2 {
+	color: #fff;
+    text-align: center;
+    line-height: 30px;
+	font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form_authorization .form-control {
+	height: 46px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+input[type="login"],
+input[type="password"],
+textarea {
+	color: #444;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.form_authorization textarea {
+	min-height:140px;
+}
+
+
+
+ 

@@ -1,0 +1,6 @@
+front:
+  path: /
+  defaults: { _controller: AppBundle:Default:login }
+
+logout:
+    path: /logout

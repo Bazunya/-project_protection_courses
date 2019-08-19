@@ -1,0 +1,145 @@
+{% extends 'base.html.twig' %}
+{% block title %} Smail.com{% endblock %}
+{% block body %}
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <header class="main-header">
+        <a href="#" class="logo">
+            <span class="logo-mini"><b>S</b>mail</span>
+            <span class="logo-lg"><b>Smail</b>.com</span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Support Team
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Valera
+                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Developers
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Sales Department
+                                                <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="{{ asset('/img/user1-128x128.jpg') }}" class="img-circle"
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Reviewers
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">Посмотреть все сообщения</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+                        </a>
+                    <li class="dropdown user user-menu">
+                        <a href="{{ url('fos_user_security_logout') }}">Выйти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <div class="user-panel">
+                <div class="pull-left image">
+            </div>
+            <ul class="sidebar-menu" data-widget="tree">
+                <li>
+                    <a href="{{ url('compose') }}" class="mail btn btn-primary btn-lg">Написать</a>
+                <li>
+                <li>
+                    <a href="{{ url('vsya_pochta') }}">
+                        <i class="fa fa-files-o"></i>
+                        <span>Входящие</span>
+                    </a>
+                <li>
+                    <a href="{{ url('mail_sent') }}">
+                        <i class="fa fa-th"></i> <span>Отправленные</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('korzina') }}">
+                        <i class="fa fa-folder"></i> <span>Корзина</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper">
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 2.4.0
+        </div>
+        <strong>Copyright 2018 <a href="https://adminlte.io">MRK</a>.</strong>Все права защищены.
+    </footer>
+</div>
+{% endblock %}
+
+
+
+
+
+
+

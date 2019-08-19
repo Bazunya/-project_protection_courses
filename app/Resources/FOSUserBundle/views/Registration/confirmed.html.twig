@@ -1,0 +1,10 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+    <div class="fos_user_registration_register">
+        <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
+        <p><a href="{{ url('vsya_pochta') }}">Посмотреть почту</a></p>
+    </div>
+{% endblock fos_user_content %}

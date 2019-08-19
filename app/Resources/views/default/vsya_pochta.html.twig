@@ -1,0 +1,29 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="content">
+            <div class="table-responsive">
+                <table class="table table-bordered  table-hover table-sm ">
+                    <thead>
+                    <th>Заголовок</th>
+                    <th>Сообщение</th>
+                    <th>Дата</th>
+                    <th>От кого</th>
+                    </thead>
+                    <tbody>
+                    {% for mail in mails %}
+                        <tr>
+                            <th style="width:3%">{{ mail.getTitle|e }}</th>
+                            <td style="width:20%" >{{ mail.getMessage|e }}</td>
+                            <td style="width:75%">{{ mail.getDate|date("F jS \\a\\t g:ia") }}</td>
+                            <td style="width:5%">{{ mail.getFrom|e }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

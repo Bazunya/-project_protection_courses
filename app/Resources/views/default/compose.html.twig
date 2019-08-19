@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="content">
+                <div id="compose-mail">
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

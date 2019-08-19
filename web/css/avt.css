@@ -1,0 +1,63 @@
+body {
+    background-image: url(../img/veli.jpg);
+}
+
+#registr {
+    color: #fff;
+    text-align: center;
+}
+
+.fos_user_registration_register {
+    width: 30%;
+    background: rgba(120, 120, 120, 0.45);
+    margin: 0 auto;
+    padding: 20px 20px 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.fos_user_registration_register input[type='submit'] {
+    color: #000;
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 20px;
+}
+.password_l  label {
+    margin-left: 43px;
+    margin-top: 13px;
+
+}
+
+.fos_user_registration_register input[type="text"],
+.fos_user_registration_register input[type="email"],
+.fos_user_registration_register input[type="password"],
+.fos_user_registration_register textarea {
+    color: #000;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+
+#password{
+    margin-left: 1px;
+    margin-top: 10px;
+}
+.error {
+    color: #fc0000;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+#remember_me{
+   margin-top: 12px;
+}
+#submit{
+ butt
+
+}
